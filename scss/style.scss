@@ -486,7 +486,7 @@ form{
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 20vh;
-
+  
   .nomprenom{
     justify-content: space-between;
     display: flex;
@@ -496,6 +496,7 @@ form{
       background: none;
       border-top: 0px;
       border-left: 0px;
+      margin-bottom: 5vh;
       border-right: 0px;
       height: 55px;
       border-bottom: 2px solid $main-beige;
@@ -513,27 +514,54 @@ form{
     justify-content: space-between;
     display: flex;
     width: 90%;
+    align-items: flex-end;
     input{
       width: 90%;
       background: none;
+      margin-bottom: 5vh;
       border-top: 0px;
       border-left: 0px;
       border-right: 0px;
       height: 55px;
       border-bottom: 2px solid $main-beige;
     }
-    #pet-select{
-      width: 190%;
+    .comptespotify{
+      width: 50%;
+    }
+    #compte{
+      width: 90%;
+      background: none;
+      margin-bottom: 5vh;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      height: 55px;
+      border-bottom: 2px solid #F8F6F0;
+      option{
+        padding: 30px 46px;
+  margin-bottom: 46px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "StelvioRegular";
+      }
+    }
+    .submitcta {
+      background-color: $flash-green;
     }
     .mail{
       justify-content: space-between;
     display: flex;
-    width: 90%;
+    width: 50%;
     }
   }
   h1{
     font-size: 120px;
    
+  }
+  .submit{
+    display: flex;
+    width: 86%;
+    justify-content: flex-end;
   }
 }
 
@@ -541,6 +569,7 @@ form{
   padding: 30px 46px;
   margin-bottom: 46px;
   font-size: 20px;
+  text-transform: uppercase;
   font-family: "StelvioRegular";
 }
 ::marker{
