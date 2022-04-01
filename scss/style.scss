@@ -1,0 +1,555 @@
+
+$dark-green: #071905;
+$flash-green: #00A050;
+$main-beige: #F8F6F0;
+
+
+@font-face{
+    font-family: "CircularBold";
+    src: url("fonts/CircularSpUIv3T-Bold.woff2");
+}
+@font-face{
+  font-family: "CircularBook";
+  src: url("fonts/CircularSpUIv3T-Book.woff2");
+}
+
+@font-face{
+  font-family: "StelvioLight";
+  src: url("fonts/stelviolight.ttf");
+}
+
+@font-face{
+  font-family: "StelvioRegular";
+  src: url("fonts/stelvioregular.ttf");
+}
+
+
+body{
+    background-color: $dark-green;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 54px 48px;
+    span{
+     color: $main-beige;
+     font-family: "CircularBold";
+     font-size: 44px;
+     line-height: 80.5%;
+    }
+    hr{
+       border: 1px solid #F8F6F0;
+       width: 10vw;
+    }
+    .logo{
+      width: 15vw;
+    }
+     .menu {
+      width: 15vw;
+      display: flex;
+      justify-content: center;
+        flex-direction: column;
+     }
+    .darklight{
+      width: 15vw;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+}
+
+  
+.hero{
+  padding: 0 2vw;
+  width: 93vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  .right{
+    position: relative;
+    background-image: url(assets/img/Group48.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 28vw;
+    #cerclehero{
+      position: absolute;
+      top: 49%;
+      left: -15%;
+      width: 16vw;
+      transform: translate(50%, 50%);
+    }
+  }
+}
+
+.section1{
+  height: 200vh;
+  h2{
+    padding: 0 2vw;
+    font-size: 60px;
+    color : $main-beige;
+    font-family: CircularBook;
+    width: 70vw;
+    line-height: 95%;
+  }
+  .images{
+    position: relative;
+    height: 160vh; 
+    margin-top : 30vh;
+      .img1{
+        position: absolute;
+        right: 2%;
+      }
+      .img2{
+        position: absolute;
+        transform: translate( 50%, 70%);
+        left: 25%;
+      }
+    }
+  }
+
+  
+
+  h1{
+    color: $main-beige;
+    font-family: "CircularBold";
+    font-size: 200px;
+    line-height: 80.5%;
+    padding: 0 2vw;
+    margin: 8vh 0;
+}
+  .cta1{
+  width: max-width;
+  height: 9vh;
+  border: 2px solid $main-beige;
+  border-radius: 125px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+    .fleche{
+      padding: 4%;
+    }
+    a{
+      color: $main-beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Matter;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 4%;
+    }
+  }
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 54px 48px;
+  bottom: 0px;
+  position: fixed;
+  width: 92.5vw;
+  a{
+    color: $main-beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Matter;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  .portfolio{
+    width: 15vw;
+  }
+   .reseaux {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    a{
+      margin: 0 10px;
+    }
+   
+   }
+  .credits{
+    width: 15vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+ input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid $main-beige;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: $flash-green;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .section2{
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vw;
+    .left{
+      width: 45%;
+      .top{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 10vh;
+        height: 40vh;
+        span{
+          color: $main-beige;
+          font-size: 532.5px;
+          font-family: CircularBold;
+          line-height: 0.8;
+        }
+        p{
+          color: $main-beige;
+          font-family: CircularBook;
+          font-size: 30px;
+          line-height: 0.8;
+        }
+      }
+    }
+    .right{
+      width: 45%;
+      position: relative;
+      hr{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+      }
+      .cta{
+        height: 40vh;
+        display: flex;
+        margin-bottom: 10vh;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        a{
+          text-align: center;
+          color: $main-beige;
+          font-family: "StelvioLight";
+          text-transform: uppercase;
+          font-size: 32px;
+          text-decoration: none;
+          background-color: $flash-green;
+          padding: 40px 50px 25px 50px; 
+          line-height: 80%;
+          border-radius: 125px;
+        }
+      }
+      .slider2{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        h2{
+          padding-top: 55px;
+          font-family: 'CircularBold';
+          font-size: 80px;
+            line-height: 82.5%;
+            color: $main-beige;
+            
+        }
+      }
+    }
+  }
+.section3{
+    padding: 0px 2vw;
+    display: flex;
+    .left{
+      width: 40%;
+      .punch3{
+        font-family: "StelvioLight";
+        font-size: 20px;
+        line-height: 24px;
+        color: $main-beige;
+      }
+      h3{
+        font-family: "CircularBook";
+        font-size: 50px;
+        color: $main-beige;
+        margin: 1vh 0px;
+        line-height: 90%;
+      }
+      .cta1{
+        height: 7vh;
+        border: 1.5px solid #F8F6F0;
+        margin-top: 5vh;
+        a{
+          font-size: 20px;
+        }
+      }
+    }
+}
+
+.section4{
+  padding: 0px 2vw;
+  display: flex;
+  margin-bottom: 20vh;
+  .left{
+    width: 50%;
+  }
+  .right{
+    width: 45%;
+    h2{
+     font-family: "CircularBook";
+     font-size: 50px;
+     margin: 2vh 0px;
+     color: $main-beige;
+     text-transform: uppercase;
+    }
+    p{
+      font-family: "CircularBook";
+    font-size: 20px;
+    margin-bottom: 5vh;
+    color: $main-beige;
+    }
+  }
+} 
+
+.section5{
+  padding: 0px 2vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20vw;
+  .left{
+    width: 50%;
+    .top{
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 10vh;
+      height: 40vh;
+      span{
+        color: $main-beige;
+        font-size: 532.5px;
+        font-family: CircularBold;
+        line-height: 0.8;
+      }
+      p{
+        color: $main-beige;
+        font-family: CircularBook;
+        font-size: 30px;
+        line-height: 0.8;
+      }
+    }
+  }
+  .right{
+    width: 45%;
+    position: relative;
+    img{
+      width: 100%;
+    }
+    hr{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 90%;
+    }
+    .cta{
+      height: 40vh;
+      display: flex;
+      margin-bottom: 10vh;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      a{
+        text-align: center;
+        color: $main-beige;
+        font-family: "StelvioLight";
+        text-transform: uppercase;
+        font-size: 32px;
+        text-decoration: none;
+        background-color: $flash-green;
+        padding: 40px 50px 25px 50px; 
+        line-height: 80%;
+        border-radius: 125px;
+      }
+    }
+    .slider2{
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+      h2{
+        padding-top: 55px;
+        font-family: 'CircularBold';
+        font-size: 80px;
+          line-height: 82.5%;
+          color: $main-beige;
+          
+      }
+    }
+  }
+}
+
+.section6{
+  padding: 0px 2vw;
+  display: flex;
+  .left{
+    width: 40%;
+    .punch3{
+      font-family: "StelvioLight";
+      font-size: 20px;
+      line-height: 24px;
+      color: $main-beige;
+    }
+    h3{
+      font-family: "CircularBook";
+      font-size: 50px;
+      color: $main-beige;
+      margin: 1vh 0px;
+      line-height: 90%;
+    }
+    .cta1{
+      height: 7vh;
+      border: 1.5px solid #F8F6F0;
+      margin-top: 5vh;
+      a{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.lastsection{
+  height: 45vh;
+  border-top: 2px solid $flash-green;
+  margin: 0;
+  padding: 0;
+  h4{
+    font-family: "CircularBold";
+    font-size: 120px;
+    color: $main-beige;
+    line-height: 84%;
+    margin-top: 6vh;
+    padding: 0 2vw;
+  }
+}
+
+form{
+  margin-top: 30vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20vh;
+
+  .nomprenom{
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    input{
+      width: 90%;
+      background: none;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      height: 55px;
+      border-bottom: 2px solid $main-beige;
+    }
+    .nom{
+      background: none;
+      width: 50%;
+    }
+    .prenom{
+      background: none;
+      width: 50%;
+    }
+  }
+  .ligne2{
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    input{
+      width: 90%;
+      background: none;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      height: 55px;
+      border-bottom: 2px solid $main-beige;
+    }
+    #pet-select{
+      width: 190%;
+    }
+    .mail{
+      justify-content: space-between;
+    display: flex;
+    width: 90%;
+    }
+  }
+  h1{
+    font-size: 120px;
+   
+  }
+}
+
+::placeholder{
+  padding: 30px 46px;
+  margin-bottom: 46px;
+  font-size: 20px;
+  font-family: "StelvioRegular";
+}
+::marker{
+ color: transparent;
+}
+
+summary {
+	border-bottom: 2px solid $main-beige;
+	cursor: pointer;
+	position: relative;
+}
+
